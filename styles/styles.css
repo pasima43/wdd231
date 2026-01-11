@@ -1,0 +1,163 @@
+:root {
+    --primary-color: #2E865F;
+    --secondary-color: #F7DC6F;
+    --bg-color: #F9F9F9;
+    --text-color: #333333;
+    --font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav a {
+    color: var(--bg-color);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--bg-color);
+    margin: 5px 0;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg-color);
+    text-align: center;
+}
+
+.community-info,
+.weather,
+.events,
+.testimonials,
+.news {
+    padding: 2rem;
+}
+
+.community-info h2,
+.weather h2,
+.events h2,
+.testimonials h2,
+.news h2 {
+    margin-bottom: 1rem;
+}
+
+.events ul,
+.news ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.events li,
+.news li {
+    margin-bottom: 1rem;
+}
+
+.testimonials blockquote {
+    margin: 0;
+    padding: 1rem;
+    border-left: 5px solid var(--primary-color);
+    background-color: var(--bg-color);
+}
+
+.testimonials cite {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    margin-right: 20px;
+}
+
+footer a {
+    color: var(--bg-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: var(--primary-color);
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+}
