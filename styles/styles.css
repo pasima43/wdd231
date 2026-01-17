@@ -1,163 +1,134 @@
-:root {
-    --primary-color: #2E865F;
-    --secondary-color: #F7DC6F;
-    --bg-color: #F9F9F9;
-    --text-color: #333333;
-    --font-family: 'Open Sans', sans-serif;
-}
-
+/* Reset and Base Styles */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-family);
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    font-family: Arial, sans-serif;
     line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
+/* Header */
 header {
-    background-color: var(--primary-color);
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+}
+
+.logo img {
+    height: 50px;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
 }
 
-nav a {
-    color: var(--bg-color);
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-    margin-right: 20px;
 }
 
-nav a:hover {
-    color: var(--secondary-color);
-}
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
-
-.hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: var(--bg-color);
-    margin: 5px 0;
-}
-
-.hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg');
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--bg-color);
-    text-align: center;
-}
-
-.community-info,
-.weather,
-.events,
-.testimonials,
-.news {
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 2rem;
 }
 
-.community-info h2,
-.weather h2,
-.events h2,
-.testimonials h2,
-.news h2 {
-    margin-bottom: 1rem;
+section {
+    margin-bottom: 2rem;
 }
 
-.events ul,
-.news ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.hero {
+    text-align: center;
+    background-color: #e9ecef;
+    padding: 2rem;
+    border-radius: 8px;
 }
 
-.events li,
-.news li {
-    margin-bottom: 1rem;
+.cta-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
 }
 
-.testimonials blockquote {
-    margin: 0;
-    padding: 1rem;
-    border-left: 5px solid var(--primary-color);
-    background-color: var(--bg-color);
+.weather,
+.business-spotlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.testimonials cite {
-    font-size: 0.8rem;
-    color: #666;
-}
-
-footer {
-    background-color: var(--primary-color);
-    color: var(--bg-color);
-    padding: 1rem;
+.spotlight {
+    flex: 1 1 300px;
     text-align: center;
 }
 
-footer ul {
+.image-montage img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0.5rem;
+}
+
+.directory ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+}
+
+.membership-form form {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
 }
 
-footer li {
-    margin-right: 20px;
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
 }
 
-footer a {
-    color: var(--bg-color);
-    text-decoration: none;
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
 }
 
-footer a:hover {
-    color: var(--secondary-color);
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-    .hamburger {
-        display: block;
+    header {
+        flex-direction: column;
     }
 
     nav ul {
-        display: none;
         flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: var(--primary-color);
-        width: 100%;
+        align-items: center;
     }
 
-    nav ul.show {
-        display: flex;
+    .weather,
+    .business-spotlights {
+        flex-direction: column;
+    }
+
+    .image-montage img {
+        max-width: 100%;
     }
 }

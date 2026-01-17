@@ -1,42 +1,41 @@
-// script.js
+// Weather API Integration (Home Page)
+if (document.getElementById('weather-display')) {
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=Carlsbad,CA,US&appid=YOUR_API_KEY&units=imperial')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('weather-display').innerHTML =
+                `<p>Temperature: ${data.main.temp}°F</p><p>Condition: ${data.weather[0].description}</p>`;
+        })
+        .catch(error => {
+            document.getElementById('weather-display').innerHTML = '<p>Weather data unavailable.</p>';
+        });
+}
 
-// Hamburger menu toggle for mobile
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('nav ul');
+// Image Montage Slideshow (Discover Page)
+if (document.getElementById('montage')) {
+    const images = document.querySelectorAll('#montage img');
+    let currentIndex = 0;
 
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-});
+    function showImage(index) {
+        images.forEach(img => img.style.display = 'none');
+        images[index].style.display = 'block';
+    }
 
-// Weather API fetch (example using OpenWeatherMap)
-const weatherSection = document.querySelector('.weather');
+    showImage(currentIndex);
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    }, 3000);
+}
 
-fetch('https://api.openweathermap.org/data/2.5/weather?q=Abuja&appid=YOUR_API_KEY&units=metric')
-    .then(response => response.json())
-    .then(data => {
-        const temp = data.main.temp;
-        const description = data.weather[0].description;
-        weatherSection.innerHTML = `
-      <h2>Weather in Abuja</h2>
-      <p>Temperature: ${temp}°C</p>
-      <p>Condition: ${description}</p>
-    `;
-    })
-    .catch(error => console.error(error));
-
-// Simple form validation for Join page
-const joinForm = document.querySelector('#join-form');
-
-if (joinForm) {
-    joinForm.addEventListener('submit', (e) => {
+// Membership Form Handler (Join Page)
+if (document.getElementById('membership-form')) {
+    document.getElementById('membership-form').addEventListener('submit', function (e) {
         e.preventDefault();
-        const name = document.querySelector('#name').value;
-        const email = document.querySelector('#email').value;
-
-        if (name && email) {
-            alert('Form submitted!');
-        } else {
-            alert('Please fill in all fields');
-        }
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const level = document.getElementById('level').value;
+        console.log(`Membership submitted: ${name}, ${email}, ${level}`);
+        alert('Thank you for your application!');
     });
 }
