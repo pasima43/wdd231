@@ -111,24 +111,3 @@ footer {
     color: white;
     padding: 1rem;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .weather,
-    .business-spotlights {
-        flex-direction: column;
-    }
-
-    .image-montage img {
-        max-width: 100%;
-    }
-}
