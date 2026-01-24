@@ -12,14 +12,19 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header */
+/* Header and Footer */
+header,
+footer {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #007bff;
-    color: white;
-    padding: 1rem;
 }
 
 .logo img {
@@ -93,7 +98,6 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width: 400px;
 }
 
 button {
@@ -102,12 +106,4 @@ button {
     border: none;
     padding: 0.5rem;
     cursor: pointer;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    background-color: #007bff;
-    color: white;
-    padding: 1rem;
 }

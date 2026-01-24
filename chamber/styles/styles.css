@@ -33,7 +33,6 @@ nav ul {
 
 nav ul li {
     margin-left: 1rem;
-
 }
 
 nav ul li a {
@@ -59,13 +58,23 @@ section {
     border-radius: 8px;
 }
 
-.cta-button {
-    display: inline-block;
-    background-color: #28a745;
+.cta-button,
+button {
     color: white;
     padding: 0.5rem 1rem;
     text-decoration: none;
     border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #28a745;
+}
+
+button {
+    background-color: #007bff;
 }
 
 .weather,
@@ -95,14 +104,6 @@ section {
     flex-direction: column;
     gap: 1rem;
     max-width: 400px;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 0.5rem;
-    cursor: pointer;
 }
 
 /* Footer */
