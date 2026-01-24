@@ -16,9 +16,6 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #007bff;
-    color: white;
     padding: 1rem;
 }
 
@@ -109,9 +106,7 @@ button {
 /* Footer */
 footer {
     text-align: center;
-    background-color: #007bff;
-    color: white;
-    padding: 1rem;
+
 }
 
 /* Responsive Design */
