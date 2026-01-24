@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abuja Chamber of Commerce</title>
-    <meta name="description" content="Connecting businesses in Abuja for growth and collaboration.">
+    <title>Directory - Abuja Chamber of Commerce</title>
+    <meta name="description"
+        content="Explore our business directory for Abuja Chamber of Commerce members. Find local businesses, services, and networking opportunities.">
     <meta name="author" content="Paschal Ezenwa">
 
     <!-- Preconnect for Google Fonts -->
@@ -16,13 +17,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles/styles.css">
-
-    <!-- photos -->
-    <link rel="stylesheet" href="https://www.istockphoto.com/resources/1.0.0/css/istockphoto.min.css">
+    <link rel="stylesheet" href="style/styles.css">
 
     <!-- Scripts -->
-    <script src="scripts/script.js" defer></script>
+    <script src="script/script.js" defer></script>
 </head>
 
 <body>
@@ -31,8 +29,13 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Abuja_Chamber_of_Commerce_and_Industry_%28ACCI%29.jpg"
                 alt="Chamber Logo">
         </div>
-        <nav>
-            <ul>
+        <nav class="responsive-nav">
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
@@ -40,21 +43,55 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="directory">
-            <h2>Local Businesses & Organizations</h2>
-            <ul>
-                <li><strong>Ventures Park HQ</strong> - Tech startup incubator.</li>
-                <li><strong>Tech Innovators Inc.</strong> - Biotech solutions.</li>
-                <li><strong>Nurnberger group</strong> - Real estate services.</li>
-                <li><strong>Abuja Arts Council</strong> - Promoting local arts.</li>
-            </ul>
-        </section>
+
+    <main class="directory-main">
+        <h1>Business Directory</h1>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for businesses...">
+        </div>
+
+        <div class="view-toggle">
+            <button id="gridView" class="active">Grid View</button>
+            <button id="listView">List View</button>
+        </div>
+
+        <div class="filter-section">
+            <label for="categoryFilter">Filter by Category:</label>
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="retail">Retail</option>
+                <option value="services">Services</option>
+                <option value="technology">Technology</option>
+                <option value="hospitality">Hospitality</option>
+            </select>
+        </div>
+
+        <div id="directoryContainer" class="grid-view">
+            <div class="directory-item">
+                <h2>Business Name 1</h2>
+                <p><strong>Category:</strong> Retail</p>
+                <p>Description: A brief description of Business Name 1.</p>
+            </div>
+            <div class="directory-item">
+                <h2>Business Name 2</h2>
+                <p><strong>Category:</strong> Services</p>
+                <p>Description: A brief description of Business Name 2.</p>
+            </div>
+            <div class="directory-item">
+                <h2>Business Name 3</h2>
+                <p><strong>Category:</strong> Technology</p>
+                <p>Description: A brief description of Business Name 3.</p>
+            </div>
+            <!-- Add more directory items as needed -->
+        </div>
     </main>
+
     <footer>
         <p>&copy; 2025 Abuja Chamber of Commerce. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="scripts/directory.js" defer></script>
 </body>
 
 </html>
