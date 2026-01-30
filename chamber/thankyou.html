@@ -8,19 +8,9 @@
     <meta name="description" content="Thank you for joining the Abuja Chamber of Commerce.">
     <meta name="author" content="Paschal Ezenwa">
 
-    <!-- Preconnect for Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/thankyou.css">
-
-    <!-- Scripts -->
-    <script src="scripts/thankyou.js" defer></script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon"
@@ -29,15 +19,39 @@
 
 <body>
     <header>
-        <!-- Header content (same as join.html) -->
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Abuja_Chamber_of_Commerce_and_Industry_%28ACCI%29.jpg"
+                alt="Abuja Chamber of Commerce Logo">
+        </div>
+        <nav class="responsive-nav">
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" aria-current="page">Join</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="thank-you-section">
+        <section class="thank-you">
             <h1>Thank You for Joining!</h1>
-            <p>We've received your membership application. Here's a summary of the information you provided:</p>
-            <div id="form-summary">
-                <!-- Form information will be dynamically inserted here -->
+            <p>Your application has been received. Here's a summary of the information you provided:</p>
+
+            <div class="form-summary">
+                <h2>Application Summary</h2>
+                <p><strong>First Name:</strong> <span id="firstName"></span></p>
+                <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Mobile Phone:</strong> <span id="phone"></span></p>
+                <p><strong>Business Name:</strong> <span id="businessName"></span></p>
+                <p><strong>Membership Level:</strong> <span id="membershipLevel"></span></p>
+                <p><strong>Application Date:</strong> <span id="timestamp"></span></p>
             </div>
         </section>
     </main>
@@ -47,30 +61,20 @@
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const params = new URLSearchParams(window.location.search);
-            const formSummary = document.getElementById('form-summary');
+        // Function to get URL parameter by name
+        function getParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
 
-            const fields = [
-                { name: 'firstName', label: 'First Name' },
-                { name: 'lastName', label: 'Last Name' },
-                { name: 'email', label: 'Email' },
-                { name: 'phone', label: 'Mobile Phone' },
-                { name: 'businessName', label: 'Business Name' },
-                { name: 'timestamp', label: 'Submission Date' }
-            ];
-
-            let summaryHTML = '<dl>';
-            fields.forEach(field => {
-                const value = params.get(field.name);
-                if (value) {
-                    summaryHTML += `<dt>${field.label}:</dt><dd>${value}</dd>`;
-                }
-            });
-            summaryHTML += '</dl>';
-
-            formSummary.innerHTML = summaryHTML;
-        });
+        // Populate the form summary with data from URL parameters
+        document.getElementById('firstName').textContent = getParam('firstName');
+        document.getElementById('lastName').textContent = getParam('lastName');
+        document.getElementById('email').textContent = getParam('email');
+        document.getElementById('phone').textContent = getParam('phone');
+        document.getElementById('businessName').textContent = getParam('businessName');
+        document.getElementById('membershipLevel').textContent = getParam('membershipLevel');
+        document.getElementById('timestamp').textContent = getParam('timestamp');
     </script>
 </body>
 

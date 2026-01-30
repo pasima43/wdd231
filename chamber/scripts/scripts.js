@@ -106,3 +106,11 @@ if (directoryContainer && gridViewBtn && listViewBtn) {
         directoryContainer.classList.remove('grid-view');
     });
 }
+
+document.querySelector('form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const data = Object.fromEntries(formData);
+    console.log('Form submitted with data:', data);
+    alert('Thank you for your submission!');
+});
