@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Abuja Chamber of Commerce</title>
+    <meta name="description" content="Thank you for joining the Abuja Chamber of Commerce.">
+    <meta name="author" content="Paschal Ezenwa">
+
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+
+    <!-- Scripts -->
+    <script src="scripts/thankyou.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon"
+        href="https://cdn.brandfetch.io/idMWtz600V/w/129/h/80/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1767107184520">
+</head>
+
+<body>
+    <header>
+        <!-- Header content (same as join.html) -->
+    </header>
+
+    <main>
+        <section class="thank-you-section">
+            <h1>Thank You for Joining!</h1>
+            <p>We've received your membership application. Here's a summary of the information you provided:</p>
+            <div id="form-summary">
+                <!-- Form information will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Abuja Chamber of Commerce. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const params = new URLSearchParams(window.location.search);
+            const formSummary = document.getElementById('form-summary');
+
+            const fields = [
+                { name: 'firstName', label: 'First Name' },
+                { name: 'lastName', label: 'Last Name' },
+                { name: 'email', label: 'Email' },
+                { name: 'phone', label: 'Mobile Phone' },
+                { name: 'businessName', label: 'Business Name' },
+                { name: 'timestamp', label: 'Submission Date' }
+            ];
+
+            let summaryHTML = '<dl>';
+            fields.forEach(field => {
+                const value = params.get(field.name);
+                if (value) {
+                    summaryHTML += `<dt>${field.label}:</dt><dd>${value}</dd>`;
+                }
+            });
+            summaryHTML += '</dl>';
+
+            formSummary.innerHTML = summaryHTML;
+        });
+    </script>
+</body>
+
+</html>

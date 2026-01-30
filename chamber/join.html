@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join Chamber of Commerce</title>
+    <meta name="description"
+        content="Join the Abuja Chamber of Commerce to connect with businesses and grow your network.">
+    <meta name="author" content="Paschal Ezenwa">
+
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <!-- Scripts -->
+    <script src="scripts/scripts.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon"
+        href="https://cdn.brandfetch.io/idMWtz600V/w/129/h/80/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1767107184520">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Abuja Chamber of Commerce">
+    <meta property="og:description" content="Connecting businesses in Abuja for growth and collaboration">
+    <meta property="og:image"
+        content="https://cdn.brandfetch.io/idMWtz600V/w/129/h/80/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1767107184520">
+    <meta property="og:url" content="http://127.0.0.1:5500/chamber/join.html">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Abuja_Chamber_of_Commerce_and_Industry_%28ACCI%29.jpg"
+                alt="Abuja Chamber of Commerce Logo">
+        </div>
+        <nav class="responsive-nav">
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" aria-current="page">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h1>Membership Application</h1>
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="firstName">
+                        First Name:
+                        <input type="text" id="firstName" name="firstName" required autocomplete="given-name">
+                    </label>
+
+                    <label for="lastName">
+                        Last Name:
+                        <input type="text" id="lastName" name="lastName" required autocomplete="family-name">
+                    </label>
+
+                    <label for="title">
+                        Organizational Title:
+                        <input type="text" id="title" name="title" required autocomplete="organization-title"
+                            pattern="[A-Za-z\s-]{7,}">
+                    </label>
+
+                    <label for="email">
+                        Email:
+                        <input type="email" id="email" name="email" required autocomplete="email"
+                            placeholder="example@domain.com">
+                    </label>
+
+                    <label for="phone">
+                        Mobile Phone:
+                        <input type="tel" id="phone" name="phone" required autocomplete="tel">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Organization Information</legend>
+                    <label for="businessName">
+                        Business/Organization Name:
+                        <input type="text" id="businessName" name="businessName" required autocomplete="organization">
+                    </label>
+
+                    <label for="description">
+                        Business/Organization Description:
+                        <textarea id="description" name="description"></textarea>
+                    </label>
+
+                    <label for="membershipLevel">
+                        Membership Level:
+                        <select id="membershipLevel" name="membershipLevel" required>
+                            <option value="">Select a membership level</option>
+                            <option value="np">NP Membership (Non-profit, no fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+
+        <section class="membership-cards">
+            <h2>Membership Levels</h2>
+            <div class="card" id="npCard">
+                <h3>NP Membership</h3>
+                <p>For non-profit organizations</p>
+                <a href="#npModal" class="info-link">More Info</a>
+            </div>
+            <div class="card" id="bronzeCard">
+                <h3>Bronze Membership</h3>
+                <p>Entry-level benefits</p>
+                <a href="#bronzeModal" class="info-link">More Info</a>
+            </div>
+            <div class="card" id="silverCard">
+                <h3>Silver Membership</h3>
+                <p>Enhanced benefits</p>
+                <a href="#silverModal" class="info-link">More Info</a>
+            </div>
+            <div class="card" id="goldCard">
+                <h3>Gold Membership</h3>
+                <p>Premium benefits</p>
+                <a href="#goldModal" class="info-link">More Info</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Abuja Chamber of Commerce. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
