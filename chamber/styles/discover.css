@@ -1,0 +1,18 @@
+poi-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.poi-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Hover effect (not applied to mobile) */
+@media (min-width: 641px) {
+    .poi-card img:hover {
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+    }
+}

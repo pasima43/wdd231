@@ -1,0 +1,11 @@
+@media (min-width: 641px) and (max-width: 1024px) {}
+
+#points-of-interest {
+    display: grid;
+    grid-template-areas:
+        "a b"
+        "c d"
+        "e f"
+        "g h";
+    gap: 1rem;
+}

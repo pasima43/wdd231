@@ -114,3 +114,53 @@ document.querySelector('form').addEventListener('submit', function (e) {
     console.log('Form submitted with data:', data);
     alert('Thank you for your submission!');
 });
+export const pointsOfInterest = [
+    {
+        name: "Kubwa",
+        address: "Kubwa, Abuja, Federal Capital Territory, Nigeria",
+        description: "A bustling satellite town known for its diverse population and vibrant markets.",
+        image: "images/kubwa.webp"
+    },
+    {
+        name: "Gwarimpa",
+        address: "Gwarimpa, Abuja, Federal Capital Territory, Nigeria",
+        description: "One of the largest planned communities in West Africa, featuring modern housing estates.",
+        image: "images/gwarimpa.webp"
+    },
+    {
+        name: "Maitama",
+        address: "Maitama, Abuja, Federal Capital Territory, Nigeria",
+        description: "An upscale district home to embassies, high-end residences, and exclusive shopping areas.",
+        image: "images/maitama.webp"
+    },
+    {
+        name: "Garki",
+        address: "Garki, Abuja, Federal Capital Territory, Nigeria",
+        description: "A central business district with government offices, commercial centers, and recreational spots.",
+        image: "images/garki.webp"
+    },
+    {
+        name: "Apo",
+        address: "Apo, Abuja, Federal Capital Territory, Nigeria",
+        description: "A rapidly developing area known for its residential estates and proximity to government institutions.",
+        image: "images/apo.webp"
+    },
+    {
+        name: "Lugbe",
+        address: "Lugbe, Abuja, Federal Capital Territory, Nigeria",
+        description: "A growing suburb popular for affordable housing and its proximity to the airport.",
+        image: "images/lugbe.webp"
+    },
+    {
+        name: "Gwagwalada",
+        address: "Gwagwalada, Abuja, Federal Capital Territory, Nigeria",
+        description: "A satellite town and educational hub, home to the University of Abuja.",
+        image: "images/gwagwalada.webp"
+    },
+    {
+        name: "Lokogoma",
+        address: "Lokogoma, Abuja, Federal Capital Territory, Nigeria",
+        description: "An emerging residential area known for its serene environment and modern estates.",
+        image: "images/lokogoma.webp"
+    }
+];
