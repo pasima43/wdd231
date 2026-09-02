@@ -1,0 +1,43 @@
+@media (min-width: 768px) {
+    header {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    header button {
+        display: none;
+    }
+
+    nav {
+        display: flex !important;
+    }
+
+    nav .menuLinks {
+        flex-direction: row;
+    }
+
+    #courses-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    main h1,
+    main .card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .card {
+        margin-bottom: 0;
+    }
+
+    .credits-total {
+        font-size: 1rem;
+    }
+}
