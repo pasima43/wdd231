@@ -149,6 +149,7 @@ main h1 {
 .card-body img {
   width: 100px;
   height: 120px;
+  object-fit: cover;
   flex-shrink: 0;
 }
 
