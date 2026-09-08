@@ -1,0 +1,58 @@
+[
+  {
+    "name": "212 Bakery Abuja",
+    "address": "Plot 458, Ahmadu Bello Way, Garki Supermarket, Area 11, Garki, Abuja",
+    "phone": "+234 809 100 1538",
+    "website": "https://212.ng",
+    "image": "212-bakery.webp",
+    "membership": 3
+  },
+  {
+    "name": "Royal Electronics",
+    "address": "Aminu Kano Crescent, Wuse II, Abuja",
+    "phone": "+234 901 414 1616",
+    "website": "https://royalelectronicsgroup.com",
+    "image": "royal-electronics.webp",
+    "membership": 3
+  },
+  {
+    "name": "Big Ideas Supermarket & Pharmacy",
+    "address": "Plot 896, 69 Road, Off 6th Avenue, Gwarinpa Estate, Abuja",
+    "phone": "+234 805 221 6000",
+    "website": "http://www.bigideas.ng",
+    "image": "big-ideas-supermarket.webp",
+    "membership": 1
+  },
+  {
+    "name": "Egonu Chambers",
+    "address": "3 Indus Close, off Euphrates Street, Maitama, Abuja",
+    "phone": "+234 803 588 4943",
+    "website": "https://egonuchambers.com",
+    "image": "egonu-chambers.webp",
+    "membership": 2
+  },
+  {
+    "name": "Iköniq Automobile Service",
+    "address": "Zone 6, Central Area, Massenya Street, Wuse, Abuja",
+    "phone": "+234 810 040 3456",
+    "website": "https://ikoniq-prestige-build.lovable.app",
+    "image": "ikoniq-automobile.webp",
+    "membership": 1
+  },
+  {
+    "name": "Shutteris Photo Studio",
+    "address": "Suite 34 FF, Atlantic Mall, Obafemi Awolowo Way, Utako, Abuja",
+    "phone": "+234 803 227 3045",
+    "website": "https://shutteris.com",
+    "image": "shutteris-studio.webp",
+    "membership": 2
+  },
+  {
+    "name": "Body Pro Fitness Gym",
+    "address": "4 Port Harcourt Crescent, Garki, Abuja",
+    "phone": "+234 806 465 6015",
+    "website": "https://www.bodyprofitness.com.ng",
+    "image": "bodypro-fitness.webp",
+    "membership": 1
+  }
+]
