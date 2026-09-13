@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abuja Chamber of Commerce - Directory</title>
+    <title>Abuja Chamber of Commerce - Home</title>
     <meta
       name="description"
-      content="Business directory for the Abuja Chamber of Commerce"
+      content="Home page for the Abuja Chamber of Commerce"
     />
     <meta name="author" content="Paschal Onyekachi Ezenwa" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="styles/larger.css" />
     <link rel="icon" href="../favicon.ico" />
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
   </head>
   <body>
     <header>
@@ -35,8 +35,8 @@
       </div>
       <nav>
         <ul class="menuLinks">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
           <li><a href="join.html">Join</a></li>
           <li><a href="discover.html">Discover</a></li>
         </ul>
@@ -49,14 +49,31 @@
     </header>
 
     <main>
-      <h1>Directory</h1>
+      <section class="hero">
+        <img
+          src="images/hero.jpg"
+          alt="Abuja City Gate welcoming visitors"
+          width="1200"
+          height="800"
+        />
+        <h1>Abuja Chamber of Commerce</h1>
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+      </section>
 
-      <div class="view-buttons">
-        <button id="grid-btn" class="active">Grid</button>
-        <button id="list-btn">List</button>
-      </div>
+      <section class="current-events">
+        <h2>Current Events</h2>
+        <p>Event details coming soon.</p>
+      </section>
 
-      <div id="members-container" class="grid-view"></div>
+      <section class="weather">
+        <h2>Weather</h2>
+        <div id="weather-container"></div>
+      </section>
+
+      <section class="spotlights">
+        <h2>Business Spotlights</h2>
+        <div id="spotlights-container"></div>
+      </section>
     </main>
 
     <footer>

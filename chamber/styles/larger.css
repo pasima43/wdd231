@@ -92,4 +92,26 @@
   .footer-dev {
     text-align: left;
   }
+
+  .hero img {
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .forecast-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .forecast-day {
+    flex: 1;
+    max-width: 150px;
+  }
+
+  #spotlights-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
 }

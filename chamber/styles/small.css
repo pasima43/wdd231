@@ -201,3 +201,85 @@ footer p {
   height: 20px;
   filter: invert(1);
 }
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.cta-button {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.cta-button:hover {
+  background-color: #444444;
+}
+
+.weather-card {
+  background-color: #e5e5e5;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.weather-temp {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.weather-description {
+  text-transform: capitalize;
+  color: #333333;
+}
+
+.forecast-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.forecast-day {
+  background-color: #e5e5e5;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.forecast-day-name {
+  font-weight: 700;
+}
+
+.current-events {
+  background-color: #e5e5e5;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
