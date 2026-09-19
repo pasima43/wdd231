@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abuja Chamber of Commerce - Thank You</title>
+    <meta
+      name="description"
+      content="Confirmation page for Abuja Chamber of Commerce membership applications"
+    />
+    <meta name="author" content="Paschal Onyekachi Ezenwa" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="icon" href="../favicon.ico" />
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-group">
+        <img
+          src="images/logo.svg"
+          alt="Abuja Chamber of Commerce Logo"
+          width="60"
+          height="60"
+        />
+        <span>Abuja Chamber of Commerce</span>
+      </div>
+      <nav>
+        <ul class="menuLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+
+      <div class="icon-group">
+        <button id="toggle-theme" aria-label="Toggle Dark Mode">◐</button>
+        <button id="menu" aria-label="Toggle Menu">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <h1>Thank You</h1>
+
+      <section class="thankyou-section">
+        <p>
+          Thank you for applying to join the Abuja Chamber of Commerce. We have
+          received your application and a member of our team will contact you
+          shortly.
+        </p>
+
+        <h2>Your Application Details</h2>
+
+        <ul class="thankyou-details">
+          <li><strong>First Name:</strong> <span id="result-first"></span></li>
+          <li><strong>Last Name:</strong> <span id="result-last"></span></li>
+          <li><strong>Email:</strong> <span id="result-email"></span></li>
+          <li>
+            <strong>Mobile Phone:</strong> <span id="result-phone"></span>
+          </li>
+          <li>
+            <strong>Business Name:</strong> <span id="result-business"></span>
+          </li>
+          <li>
+            <strong>Application Date:</strong>
+            <span id="result-timestamp"></span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-contact">
+        <p><strong>Abuja Chamber of Commerce</strong></p>
+        <p>5 Aguiyi Ironsi Street</p>
+        <p>Maitama, Abuja</p>
+        <p>info@abujachamber.ng</p>
+        <p>+234 803 555 0100</p>
+      </div>
+
+      <div class="social-links">
+        <a href="https://linkedin.com" target="_blank"
+          ><img src="images/linkedin.svg" alt="LinkedIn" width="28" height="28"
+        /></a>
+        <a href="https://github.com" target="_blank"
+          ><img src="images/github.svg" alt="GitHub" width="28" height="28"
+        /></a>
+        <a href="https://x.com" target="_blank"
+          ><img src="images/x.svg" alt="X" width="28" height="28"
+        /></a>
+      </div>
+
+      <div class="footer-dev">
+        <p>WDD 231 Class Project</p>
+        <p>Paschal Onyekachi Ezenwa</p>
+        <p>&copy; <span id="currentyear"></span> Abuja Chamber of Commerce</p>
+        <p id="lastModified"></p>
+      </div>
+    </footer>
+  </body>
+</html>

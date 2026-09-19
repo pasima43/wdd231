@@ -114,4 +114,15 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
   }
+
+  .join-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+  }
+
+  dialog {
+    max-width: 450px;
+  }
 }
