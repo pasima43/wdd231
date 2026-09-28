@@ -3,7 +3,7 @@ import discoverData from "../data/discover.mjs";
 const discoverContainer = document.querySelector("#discover-container");
 
 function displayDiscoverItems(items) {
-  items.forEach((item) => {
+  items.forEach((item, index) => {
     const card = document.createElement("div");
     card.classList.add("discover-card");
 
@@ -14,7 +14,9 @@ function displayDiscoverItems(items) {
     const image = document.createElement("img");
     image.setAttribute("src", `images/${item.image}`);
     image.setAttribute("alt", item.name);
-    image.setAttribute("loading", "lazy");
+    if (index > 0) {
+      image.setAttribute("loading", "lazy");
+    }
 
     figure.appendChild(image);
 
