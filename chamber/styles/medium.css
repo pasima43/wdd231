@@ -1,0 +1,19 @@
+@media (min-width: 641px) {
+  #discover-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "c1 c1"
+      "c2 c3"
+      "c4 c5"
+      "c6 c7"
+      "c8 c8";
+  }
+
+  .discover-card img {
+    transition: transform 0.3s ease;
+  }
+
+  .discover-card img:hover {
+    transform: scale(1.05);
+  }
+}
