@@ -21,6 +21,7 @@
 
   nav {
     display: block !important;
+    position: static;
     background-color: transparent;
     order: 2;
     flex: 1;

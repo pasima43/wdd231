@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  color: #0d1b2a;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #0d1b2a;
+  position: relative;
+}
+
+header .logo-text {
+  color: #f5a623;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+header button {
+  background: none;
+  border: none;
+  color: #f5a623;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+  background-color: #0d1b2a;
+}
+
+nav.open {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+nav .menuLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+nav .menuLinks li a {
+  display: block;
+  padding: 12px 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav .menuLinks li a.active {
+  background-color: #f5a623;
+  color: #0d1b2a;
+  font-weight: 700;
+}
+
+main {
+  padding: 20px 15px;
+}
+
+main h1 {
+  color: #0d1b2a;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.plan-section {
+  background-color: #0d1b2a;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.plan-section h2 {
+  color: #f5a623;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.plan-section ul {
+  margin-left: 20px;
+}
+
+.color-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.swatch {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.swatch.navy {
+  background-color: #0d1b2a;
+  border: 1px solid #f5a623;
+}
+
+.swatch.gold {
+  background-color: #f5a623;
+}
+
+.plan-section figure {
+  margin-bottom: 15px;
+}
+
+.plan-section img {
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #f5a623;
+  border-radius: 6px;
+  display: block;
+}
+
+.plan-section figcaption {
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+footer {
+  background-color: #0d1b2a;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  header button {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    position: static;
+  }
+
+  header {
+    background-color: #0d1b2a;
+  }
+
+  nav .menuLinks {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+}
