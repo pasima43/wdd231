@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Pasima - Pricing and Accounts</title>
+    <meta
+      name="description"
+      content="Fees for El Pasima and a form to create an account."
+    />
+    <meta name="author" content="Paschal Onyekachi Ezenwa" />
+    <meta property="og:title" content="Pricing and Accounts - El Pasima" />
+    <meta
+      property="og:description"
+      content="See El Pasima's fees and create an account."
+    />
+    <meta
+      property="og:image"
+      content="https://pasima43.github.io/wdd231/finalproject/images/hero-bitcoin.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://pasima43.github.io/wdd231/finalproject/pricing.html"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <span class="logo-text">El Pasima</span>
+      <button id="menu" aria-label="Toggle Menu">☰</button>
+      <nav>
+        <ul class="menuLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trading.html">How Trading Works</a></li>
+          <li>
+            <a href="pricing.html" class="active">Pricing &amp; Accounts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Pricing and Accounts</h1>
+      <p>
+        Opening an account is free. Here is what trading on El Pasima costs.
+      </p>
+
+      <div class="pricing-grid">
+        <section>
+          <h2>Fees</h2>
+          <ul>
+            <li>Opening an account: free</li>
+            <li>Deposits by bank transfer: free</li>
+            <li>Trading fee: 0.5% of the trade amount</li>
+            <li>Withdrawals: 1% of the withdrawal amount</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Create an account</h2>
+          <form action="account-created.html" method="get">
+            <label>
+              Full name
+              <input
+                type="text"
+                name="full-name"
+                required
+                autocomplete="name"
+              />
+            </label>
+
+            <label>
+              Email address
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+
+            <label>
+              Plan
+              <select name="plan">
+                <option value="starter">Starter</option>
+                <option value="pro">Pro</option>
+              </select>
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" rows="4"></textarea>
+            </label>
+
+            <button type="submit">Create account</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> El Pasima</p>
+      <p><a href="attributions.html">Attributions</a></p>
+      <p><a href="#video">Project video</a></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Bitcoin",
+    "symbol": "BTC",
+    "launched": 2009,
+    "mechanism": "Proof of Work",
+    "description": "The first cryptocurrency, created by an anonymous developer known as Satoshi Nakamoto. Often called digital gold."
+  },
+  {
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "launched": 2015,
+    "mechanism": "Proof of Stake",
+    "description": "A blockchain for smart contracts and decentralized apps. Switched from Proof of Work to Proof of Stake in 2022."
+  },
+  {
+    "name": "Solana",
+    "symbol": "SOL",
+    "launched": 2020,
+    "mechanism": "Proof of Stake with Proof of History",
+    "description": "A high-speed blockchain built for payments, decentralized finance, and other apps."
+  },
+  {
+    "name": "XRP",
+    "symbol": "XRP",
+    "launched": 2012,
+    "mechanism": "XRP Ledger Consensus Protocol",
+    "description": "A digital asset designed for fast, low-cost international payments on the XRP Ledger."
+  },
+  {
+    "name": "Cardano",
+    "symbol": "ADA",
+    "launched": 2017,
+    "mechanism": "Proof of Stake",
+    "description": "A blockchain developed through peer-reviewed research, designed for smart contracts and long-term sustainability."
+  },
+  {
+    "name": "Dogecoin",
+    "symbol": "DOGE",
+    "launched": 2013,
+    "mechanism": "Proof of Work",
+    "description": "A cryptocurrency that began as a joke and became popular for online tipping and community use."
+  },
+  {
+    "name": "Litecoin",
+    "symbol": "LTC",
+    "launched": 2011,
+    "mechanism": "Proof of Work",
+    "description": "A cryptocurrency created as a faster, lighter alternative to Bitcoin."
+  },
+  {
+    "name": "Polkadot",
+    "symbol": "DOT",
+    "launched": 2020,
+    "mechanism": "Nominated Proof of Stake",
+    "description": "A network that connects separate blockchains so they can share information and assets."
+  },
+  {
+    "name": "Avalanche",
+    "symbol": "AVAX",
+    "launched": 2020,
+    "mechanism": "Avalanche Consensus Protocol",
+    "description": "A blockchain platform known for fast transaction finality and support for custom networks."
+  },
+  {
+    "name": "Stellar",
+    "symbol": "XLM",
+    "launched": 2014,
+    "mechanism": "Stellar Consensus Protocol",
+    "description": "An open network for fast, low-cost payments and currency transfers between people and institutions."
+  },
+  {
+    "name": "Monero",
+    "symbol": "XMR",
+    "launched": 2014,
+    "mechanism": "Proof of Work (RandomX)",
+    "description": "A privacy-focused cryptocurrency that hides the sender, receiver, and amount of each transaction by default."
+  },
+  {
+    "name": "Algorand",
+    "symbol": "ALGO",
+    "launched": 2019,
+    "mechanism": "Pure Proof of Stake",
+    "description": "A blockchain designed for fast, low-cost transactions and decentralized finance apps."
+  },
+  {
+    "name": "Tezos",
+    "symbol": "XTZ",
+    "launched": 2018,
+    "mechanism": "Liquid Proof of Stake",
+    "description": "A blockchain that can upgrade itself through community voting without splitting into separate chains."
+  },
+  {
+    "name": "Cosmos",
+    "symbol": "ATOM",
+    "launched": 2019,
+    "mechanism": "Tendermint Proof of Stake",
+    "description": "A network of independent blockchains that can communicate with each other."
+  },
+  {
+    "name": "TRON",
+    "symbol": "TRX",
+    "launched": 2018,
+    "mechanism": "Delegated Proof of Stake",
+    "description": "A blockchain focused on content sharing and decentralized apps."
+  }
+]

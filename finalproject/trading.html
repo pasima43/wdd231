@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Pasima - How Trading Works</title>
+    <meta
+      name="description"
+      content="How trading works on El Pasima and the digital assets you can buy and sell."
+    />
+    <meta name="author" content="Paschal Onyekachi Ezenwa" />
+    <meta property="og:title" content="How Trading Works - El Pasima" />
+    <meta
+      property="og:description"
+      content="See how buying and selling works on El Pasima, and browse the digital assets you can trade."
+    />
+    <meta
+      property="og:image"
+      content="https://pasima43.github.io/wdd231/finalproject/images/hero-bitcoin.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://pasima43.github.io/wdd231/finalproject/trading.html"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <span class="logo-text">El Pasima</span>
+      <button id="menu" aria-label="Toggle Menu">☰</button>
+      <nav>
+        <ul class="menuLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trading.html" class="active">How Trading Works</a></li>
+          <li><a href="pricing.html">Pricing &amp; Accounts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>How Trading Works</h1>
+      <p>
+        El Pasima lets you buy and sell digital assets in a few steps: create an
+        account, add funds, choose an asset, and place an order. Browse the
+        assets below to see what's available.
+      </p>
+
+      <section id="coin-list" aria-label="Available digital assets"></section>
+
+      <dialog id="coin-dialog" aria-labelledby="dialog-title">
+        <h2 id="dialog-title"></h2>
+        <p><strong>Launched:</strong> <span id="dialog-launched"></span></p>
+        <p>
+          <strong>How it works:</strong> <span id="dialog-mechanism"></span>
+        </p>
+        <p id="dialog-body"></p>
+        <button type="button" class="dialog-close">Close</button>
+      </dialog>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> El Pasima</p>
+      <p><a href="attributions.html">Attributions</a></p>
+      <p><a href="#video">Project video</a></p>
+    </footer>
+  </body>
+</html>

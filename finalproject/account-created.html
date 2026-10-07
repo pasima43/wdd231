@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Pasima - Account Request Received</title>
+    <meta
+      name="description"
+      content="Review the account details you submitted to El Pasima."
+    />
+    <meta name="author" content="Paschal Onyekachi Ezenwa" />
+    <meta property="og:title" content="Account Request Received - El Pasima" />
+    <meta
+      property="og:description"
+      content="Review the account details you submitted to El Pasima."
+    />
+    <meta
+      property="og:image"
+      content="https://pasima43.github.io/wdd231/finalproject/images/hero-bitcoin.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://pasima43.github.io/wdd231/finalproject/account-created.html"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/main.js" type="module" defer></script>
+    <script src="scripts/account.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <span class="logo-text">El Pasima</span>
+      <button id="menu" aria-label="Toggle Menu">☰</button>
+      <nav>
+        <ul class="menuLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trading.html">How Trading Works</a></li>
+          <li>
+            <a href="pricing.html" class="active">Pricing &amp; Accounts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Account request received</h1>
+      <p>Thank you. Here are the details you submitted:</p>
+      <ul id="account-details"></ul>
+      <p><a href="pricing.html">Return to pricing</a></p>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> El Pasima</p>
+      <p><a href="attributions.html">Attributions</a></p>
+      <p><a href="#video">Project video</a></p>
+    </footer>
+  </body>
+</html>

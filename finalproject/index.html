@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Pasima - Home</title>
+    <meta
+      name="description"
+      content="El Pasima is a crypto trading platform for buying and selling digital assets."
+    />
+    <meta name="author" content="Paschal Onyekachi Ezenwa" />
+    <meta property="og:title" content="El Pasima - Crypto Trading Platform" />
+    <meta
+      property="og:description"
+      content="Learn what El Pasima offers, how trading works, and what it costs to get started."
+    />
+    <meta
+      property="og:image"
+      content="https://pasima43.github.io/wdd231/finalproject/images/hero-bitcoin.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://pasima43.github.io/wdd231/finalproject/index.html"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <span class="logo-text">El Pasima</span>
+      <button id="menu" aria-label="Toggle Menu">☰</button>
+      <nav>
+        <ul class="menuLinks">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="trading.html">How Trading Works</a></li>
+          <li><a href="pricing.html">Pricing &amp; Accounts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>El Pasima</h1>
+          <p>
+            Welcome. El Pasima is a simple crypto trading platform. Create an
+            account, add funds, and buy or sell digital assets in one place.
+          </p>
+
+          <a href="trading.html" class="cta-button">See how trading works</a>
+        </div>
+        <img
+          src="images/hero-bitcoin.webp"
+          alt="Golden Bitcoin coins in front of a trading chart"
+          width="1200"
+          height="630"
+        />
+      </section>
+
+      <section>
+        <h2>Why trade with El Pasima?</h2>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Clear fees</h3>
+            <p>
+              Every fee is listed on the Pricing and Accounts page, so you know
+              the cost before you trade.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Many digital assets</h3>
+            <p>
+              Browse 15 digital assets, each with its launch year and how its
+              network confirms transactions.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Simple setup</h3>
+            <p>
+              Create an account with your name and email, then choose a plan.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="split">
+        <img
+          src="images/feature-holding.webp"
+          alt="A hand holding a gold Bitcoin coin"
+          width="800"
+          height="500"
+          loading="lazy"
+        />
+
+        <div>
+          <h2>Trade with the facts in front of you</h2>
+          <p>
+            The How Trading Works page lists each asset with its launch year and
+            how it works, so you can compare before you decide. Trading involves
+            risk, and prices can change quickly.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> El Pasima</p>
+      <p><a href="attributions.html">Attributions</a></p>
+      <p><a href="#video">Project video</a></p>
+    </footer>
+  </body>
+</html>
