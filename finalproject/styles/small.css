@@ -94,25 +94,6 @@ footer a {
   color: #f5a623;
 }
 
-@media (min-width: 768px) {
-  header button {
-    display: none;
-  }
-
-  nav,
-  nav.open {
-    display: block;
-    position: static;
-    background-color: transparent;
-  }
-
-  nav .menuLinks {
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 10px;
-  }
-}
-
 #coin-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -310,21 +291,7 @@ form button {
   margin-bottom: 8px;
 }
 
-@media (min-width: 768px) {
-  .hero,
-  .split {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .pricing-grid {
   display: grid;
   gap: 30px;
-}
-
-@media (min-width: 768px) {
-  .pricing-grid {
-    grid-template-columns: 1fr 1.2fr;
-    align-items: start;
-  }
 }
